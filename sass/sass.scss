@@ -1,0 +1,308 @@
+
+$color: #e89300;
+
+
+@import url(normalize.css);
+@import url(fonts.css);
+
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+
+
+footer {
+	color: #ffffff;
+
+
+	.bands-footer {
+		background-image: url('../img/bg-bands-footer.png');
+		width: 100%;
+		height: 14px;
+		background-repeat: repeat-x;
+		outline: 1px solid #111111;
+		
+	}
+
+	
+
+	.footer-content {
+		border: 1px solid #252525;
+		padding: 10px;
+
+		.raz {
+		    background: linear-gradient(yellow, red);
+		        background-clip: border-box;
+		    -webkit-background-clip: text;
+		    color: transparent;
+		    width: 190px;
+		    margin: auto;
+
+		    font-family: "MyriadPro-BoldCond", sans-serif;
+			font-size: 24px;
+		}
+
+
+		.foot-logo {
+			padding: 18px 0;
+		}
+
+
+		.foot-text {
+	
+			padding: 10px 20px;
+			position: relative;
+
+			p {
+				margin: 0;
+				padding: 4px 0;
+			}
+
+			b {
+				float: right;
+			}
+		}
+
+		.foot-text::before {
+			content: "";
+			position: absolute;
+			background-image: url('../img/foot-border.png');
+			width: 7px;
+			height: 90px;
+			left: 0px;
+
+		}
+
+		.foot-text::after {
+			content: "";
+			position: absolute;
+			background-image: url('../img/foot-border.png');
+			width: 7px;
+			height: 90px;
+			right: 0px;
+			top: 10px;
+		}
+		
+
+
+		.div-img {
+			border: 1px solid #333333;
+			width: 80px;
+			height: 28px;
+			background-image: url('../img/div-img.png');
+			background-repeat: no-repeat;
+			float: left;
+			display1: inline-block;
+			margin-right: 10px;
+			margin-bottom: 6px;
+		}
+
+
+		.foot-up {
+
+			position: relative;
+
+			input {
+				background-image: url('../img/upstairs.png');
+				width: 60px;
+				height: 46px;
+				background-color: transparent;
+				border: none;
+				float1: right;
+				position: absolute;
+				right: 0px;
+				top: 30px;
+			}
+
+
+			.div-img-wrapp {
+				width: 180px;
+				margin: 14px auto;
+
+
+			}
+		}
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+// Медиа
+
+
+
+	@media only screen and (max-width: 1200px) {
+		
+		header {
+			
+			.main-menu-wrapp {
+				background-color: #303030;
+			}
+
+			.border-menu {
+				background-color: transparent;
+			}
+				
+
+			.main-menu {
+				display1: none;
+				position1: absolute;
+				position: relative;
+				width: 100%;
+				z-index: 100;
+				background-color: #212121;
+				max-width1: 300px;
+				right1: 14px;
+				overflow1: hidden;
+
+				ul {
+					display: none;
+					position: absolute;
+					width: 100%;
+					z-index: 100;
+					background-color: #212121;
+					top: 48px;
+				}
+
+				li {
+					display: block;
+					text-align: center;
+
+					a {
+						border: none;
+					}
+				}
+
+
+			}
+
+			#main-menu {
+				display: block;
+				
+			}
+		}
+		
+	}
+
+	@media only screen and (max-width: 992px) {
+		.arr_alf_parent {
+			display: none;
+		}
+
+		.content-logo {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.content .left-bar .block-left-bar img,
+		.content .right-bar .block-right {
+			max-width: 200px;
+			margin: auto;
+		}
+
+
+		.content .info-block-wrapp .info-block-arrow {
+			width: 100%;
+			padding: 6px 0;
+		}
+
+		.content .serch-wrapp .user-menu ul {
+			text-align: center;
+		}
+
+		.user-menu {
+			padding: 10px 0;
+		}
+
+		footer {
+			text-align: center;
+
+			.footer-content .foot-text b {
+				float: none;
+
+			}
+		}
+
+		.content .content-center .bread-crumbs::after {
+			content: "";
+			position: absolute;
+			width: 0px;
+			height: 0px;
+		}
+
+	}
+
+	@media only screen and (max-width: 480px) {
+		
+		.user-menu {
+
+			position: relative;
+
+
+			ul {
+				display: none;
+				position: absolute;
+				right: 0;
+				background-color: #292929;
+				z-index: 100;
+				top: 40px;
+			}
+		}
+
+		.content .serch-wrapp .user-menu .butt-user {
+			display: block;
+		}
+
+		.content .serch-wrapp .user-menu ul li {
+			display: block;
+		}
+
+		.content .serch-wrapp .user-menu ul li a::after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+		}
+
+		.content .content-center .once-article .bott-bands .bands {
+			display: none;
+		}
+
+	}
+
+	@media only screen and (max-width: 320px) {
+
+	}
+
+
+	@media only screen and (min-width: 1201px) {
+		header {
+
+			.main-menu {
+				
+				ul {
+					display: block !important;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 481px) {
+		.user-menu {
+
+			ul {
+				display: block !important;
+				
+			}
+		}
+	}
+	
+
+

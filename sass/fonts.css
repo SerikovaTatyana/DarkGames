@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "MyriadPro-BoldCond";
+	src: url("../fonts/MyriadPro-BoldCond.otf");
+}
+
+@font-face {
+	font-family: "AGLettericaCondensed";
+	src: url("../fonts/ofont.ru_AGLettericaCondensed.ttf");
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro-Cond.otf");
+}
+
+@font-face {
+	font-family: "MyriadPro-CondIt";
+	src: url("../fonts/MyriadPro-CondIt.otf");
+}
